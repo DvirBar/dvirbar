@@ -1,0 +1,29 @@
+:root {
+    --default-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2),
+        0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    --default-shadow-hover: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #000000b4;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 4rem;
+}
