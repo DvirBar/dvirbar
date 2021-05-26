@@ -1,0 +1,17 @@
+.btn {
+    background-color: #292929;
+    color: #fff;
+    height: 5rem;
+    width: 12rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: var(--default-shadow);
+    transition: background-color 0.2s ease-in-out;
+    font-family: Roboto;
+}
+
+.btn:hover {
+    background-color: #292929b7;
+}

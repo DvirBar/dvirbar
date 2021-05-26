@@ -9,6 +9,12 @@
         "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended"
     ],
+    "settings": {
+        "react": {
+            "fragment": "Fragment",
+            "version": "detect"
+        }
+    },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
@@ -18,9 +24,16 @@
         "sourceType": "module"
     },
     "plugins": [
-            "react",
+        "react",
         "@typescript-eslint"
     ],
     "rules": {
+        "react/jsx-max-props-per-line": [
+            1, 
+            { 
+                "maximum": 2,
+                "when": "always"
+            }
+        ]
     }
 }
