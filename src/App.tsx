@@ -1,33 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Card from "./Components/Containers/Card/Card";
-import CardBody from "./Components/Containers/Card/CardBody";
-import CardHeader from "./Components/Containers/Card/CardHeader";
-import CardTitles from "./Components/Containers/Card/CardTitles";
-import Button from "./Components/Inputs/Button/Button";
+import PageCarousel from "./Components/Navigation/PageCarousel/PageCarousel";
+import { carouselItems } from "./Site/pageItems";
+import SiteSections from "./Site/SiteSections";
 
 function App(): JSX.Element {
+  const [selectedItemId, setSelectedItemId] = useState<string>(
+    carouselItems[0]?.elementId
+  );
+
   return (
     <div className="App">
-      <Button
-        text="check"
-        onClick={() => {
-          console.log("hi");
-        }}
+      <PageCarousel
+        carouselItems={carouselItems}
+        selectedItemId={selectedItemId}
       />
-      <h1>Title</h1>
-
-      <Card>
-        <CardHeader>
-          <CardTitles
-            title={"Title"}
-            subTitle={"This is checking of subtitle"}
-          />
-        </CardHeader>
-        <CardBody>
-          <p>This is body</p>
-        </CardBody>
-      </Card>
+      <SiteSections selectItem={setSelectedItemId} />
     </div>
   );
 }

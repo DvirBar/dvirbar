@@ -19,6 +19,7 @@ body {
     background-color: #000000b4;
     scroll-behavior: smooth;
     color: #fff;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -36,4 +37,8 @@ h3 {
     font-size: 2rem;
     margin: 1rem 0;
     color: #aaa;
+}
+
+ul {
+    list-style-type: none;
 }
