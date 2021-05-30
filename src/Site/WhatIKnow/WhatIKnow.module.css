@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .list {
+        justify-content: center;
+    }
+}
+
+.list > * {
+    margin-right: 2rem;
+}

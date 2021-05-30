@@ -8,8 +8,16 @@
         0 8px 10px -10px rgba(0, 0, 0, 0.19);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
+    box-sizing: border-box;
+    height: -webkit-fill-available;
 }
 
 body {
@@ -20,17 +28,48 @@ body {
     scroll-behavior: smooth;
     color: #fff;
     overflow-x: hidden;
+    animation: opacity-load 0.8s ease-in-out;
+}
+
+@keyframes opacity-load {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.root {
+    width: 100%;
+}
+
+.App {
+    width: 100%;
 }
 
 h1 {
     font-size: 10rem;
     font-weight: 100;
+    text-shadow: var(--shadow-default-hover);
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 9rem;
+    }
 }
 
 h2 {
     font-weight: 100;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     margin: 0 0.5rem;
+}
+
+@media (max-width: 650px) {
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 h3 {
@@ -41,4 +80,13 @@ h3 {
 
 ul {
     list-style-type: none;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

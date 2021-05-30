@@ -1,1 +1,6 @@
-export type selectItem = (id: string, skipScroll?: boolean) => void;
+export type SelectItem = (id: string, index: number) => void;
+
+export interface SelectedItem {
+  elementId: string;
+  index: number;
+}

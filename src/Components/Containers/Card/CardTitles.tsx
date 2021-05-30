@@ -3,7 +3,7 @@ import styles from "./Card.module.css";
 
 interface IProps {
   title: string;
-  subTitle: string;
+  subTitle?: string;
 }
 
 function CardTitles({ title, subTitle }: IProps): JSX.Element {

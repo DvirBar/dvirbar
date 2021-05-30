@@ -2,7 +2,6 @@
     box-shadow: var(--shadow-default);
     width: 50rem;
     border-radius: 0.5rem;
-    height: 50rem;
     transition: box-shadow 0.3s ease-in-out;
     background-color: #2b2b2b;
 }

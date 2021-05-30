@@ -2,19 +2,19 @@ import { CarouselItem } from "../Components/Navigation/PageCarousel/types";
 
 export const carouselItems: CarouselItem[] = [
   {
-    label: "Who I am",
+    label: "HOME",
     elementId: "who-i-am",
   },
   {
-    label: "What I know",
+    label: "TECHNOLOGIES",
     elementId: "what-i-know",
   },
   {
-    label: "My projects",
+    label: "PROJECTS",
     elementId: "my-projects",
   },
   {
-    label: "Why hire me",
+    label: "ABOUT",
     elementId: "why-hire-me",
   },
 ];

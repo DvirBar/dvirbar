@@ -5,11 +5,11 @@ function useElementReach(
   callback: () => void
 ): void {
   const listener = () => {
-    const elementHeight = ref.current?.offsetHeight;
+    const elementHeight = ref.current?.scrollHeight;
     const elementPosition = ref.current?.offsetTop;
     const scrollY = window.pageYOffset;
 
-    if (elementPosition && elementHeight) {
+    if (typeof elementPosition !== "undefined" && elementHeight) {
       const top = elementPosition - 100;
       const bottom = elementPosition + elementHeight * 0.6;
 
@@ -25,7 +25,7 @@ function useElementReach(
     }
 
     return () => window.removeEventListener("scroll", listener);
-  }, [ref]);
+  }, []);
 }
 
 export default useElementReach;
