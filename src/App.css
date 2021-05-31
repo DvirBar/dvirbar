@@ -6,6 +6,8 @@
 
     --shadow-bottom: 0 6px 6px -6px rgba(0, 0, 0, 0.2),
         0 8px 10px -10px rgba(0, 0, 0, 0.19);
+
+    --main-color: #2ab8d1;
 }
 
 * {

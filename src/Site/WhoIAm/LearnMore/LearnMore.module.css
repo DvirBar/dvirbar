@@ -1,0 +1,10 @@
+.learn_more {
+    justify-items: flex-end;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.learn_more:hover {
+    color: var(--main-color);
+}

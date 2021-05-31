@@ -8,6 +8,8 @@
     z-index: 1;
     justify-content: center;
     height: 8rem;
+    --unselected-color: #d6d5d588;
+    --selected-color: var(--main-color);
 }
 
 .carousel_wrapper {
@@ -33,7 +35,7 @@
     position: relative;
     position: absolute;
     left: 0;
-    background-color: #fff;
+    background-color: var(--selected-color);
     bottom: 0;
     transition: left 0.4s ease-in-out, width 0.4s ease-in-out;
 }
@@ -45,8 +47,6 @@
     cursor: pointer;
     transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
     justify-content: center;
-    --unselected-color: #d6d5d588;
-    --selected-color: #fff;
     height: 100%;
     padding: 0 1rem;
 }
@@ -61,10 +61,3 @@
     color: var(--unselected-color);
     font-size: 1.8rem;
 }
-
-/* @media (max-width: 500px) {
-    .carousel_wrapper {
-        width: 100%;
-        font-size: ;
-    }
-} */

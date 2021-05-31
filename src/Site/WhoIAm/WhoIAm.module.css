@@ -1,13 +1,18 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .title {
-    font-size: 10rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .sub_title {
