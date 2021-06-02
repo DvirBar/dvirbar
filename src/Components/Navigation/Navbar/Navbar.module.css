@@ -1,18 +1,17 @@
-.page_carousel {
+.navbar {
     display: flex;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #303030;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     justify-content: center;
     height: 8rem;
-    --unselected-color: #d6d5d588;
     --selected-color: var(--main-color);
+    background-color: #fff;
 }
 
-.carousel_wrapper {
+.navbar_wrapper {
     width: 50rem;
     height: 100%;
     display: flex;
@@ -24,14 +23,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7.5rem;
+    height: 7.7rem;
     padding-top: 1rem;
     width: 100%;
 }
 
 .indicator {
     width: 100%;
-    height: 0.5rem;
+    height: 0.3rem;
     position: relative;
     position: absolute;
     left: 0;
@@ -40,7 +39,21 @@
     transition: left 0.4s ease-in-out, width 0.4s ease-in-out;
 }
 
-.carousel_item {
+@media (max-width: 480px) {
+    .navbar {
+        height: 8rem;
+    }
+
+    .list {
+        height: 7.7rem;
+    }
+
+    .indicator {
+        height: 0.3rem;
+    }
+}
+
+.navbar_item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,5 +72,5 @@
     transition: color 0.2s ease-in-out;
 
     color: var(--unselected-color);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }

@@ -1,6 +1,6 @@
-import { CarouselItem } from "../Components/Navigation/PageCarousel/types";
+import { NavItem } from "../Components/Navigation/Navbar/types";
 
-export const carouselItems: CarouselItem[] = [
+export const navItems: NavItem[] = [
   {
     label: "HOME",
     elementId: "who-i-am",

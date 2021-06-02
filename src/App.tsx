@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import "./App.css";
-import PageCarousel from "./Components/Navigation/PageCarousel/PageCarousel";
+import Navbar from "./Components/Navigation/Navbar/Navbar";
 import SiteProvider from "./Site/context/SiteContext";
-import { carouselItems } from "./Site/pageItems";
+import { navItems } from "./Site/pageItems";
 import SiteSections from "./Site/SiteSections";
 import { SelectedItem } from "./Site/types";
 
 function App(): JSX.Element {
   const [selectedItem, setSelectedItem] = useState<SelectedItem>({
-    elementId: carouselItems[0]?.elementId,
+    elementId: navItems[0]?.elementId,
     index: 0,
   });
 
   return (
     <div className="App">
-      <PageCarousel carouselItems={carouselItems} selectedItem={selectedItem} />
+      <Navbar navItems={navItems} selectedItem={selectedItem} />
       <SiteProvider setSelectedItem={setSelectedItem}>
         <SiteSections />
       </SiteProvider>

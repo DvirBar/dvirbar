@@ -1,15 +1,15 @@
 import React, { useCallback, useState } from "react";
-import PageCarouselItem from "./PageCarouselItem";
-import { CarouselItem, SelectedDims } from "./types";
-import styles from "./PageCarousel.module.css";
+import NavbarItem from "./NavbarItem";
+import { NavItem, SelectedDims } from "./types";
+import styles from "./Navbar.module.css";
 import { SelectedItem } from "../../../Site/types";
 
 interface IProps {
-  carouselItems: CarouselItem[];
+  navItems: NavItem[];
   selectedItem: SelectedItem;
 }
 
-function PageCarousel({ carouselItems, selectedItem }: IProps): JSX.Element {
+function Navbar({ navItems, selectedItem }: IProps): JSX.Element {
   const [selectedDims, setSelectedDims] = useState<SelectedDims>();
 
   const indicatorStyle = {
@@ -22,13 +22,13 @@ function PageCarousel({ carouselItems, selectedItem }: IProps): JSX.Element {
   }, []);
 
   return (
-    <nav className={styles.page_carousel}>
-      <div className={styles.carousel_wrapper}>
+    <nav className={styles.navbar}>
+      <div className={styles.navbar_wrapper}>
         <ul className={styles.list}>
-          {carouselItems.map((carouselItem) => (
-            <PageCarouselItem
-              key={carouselItem.elementId}
-              carouselItem={carouselItem}
+          {navItems.map((navItem) => (
+            <NavbarItem
+              key={navItem.elementId}
+              navItem={navItem}
               selectedItem={selectedItem}
               selectDims={selectDims}
             />
@@ -40,4 +40,4 @@ function PageCarousel({ carouselItems, selectedItem }: IProps): JSX.Element {
   );
 }
 
-export default React.memo(PageCarousel);
+export default React.memo(Navbar);
