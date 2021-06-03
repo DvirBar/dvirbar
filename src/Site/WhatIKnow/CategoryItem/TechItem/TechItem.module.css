@@ -1,26 +1,29 @@
 .item {
-    width: 12rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
-.item_icon {
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
-    height: 8rem;
-    cursor: pointer;
-    transition: filter 0.2s ease-in-out;
+.icon {
+    height: 6rem;
     margin-bottom: 1rem;
 }
 
-.item_icon:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-.item_text {
-    font-size: 2rem;
+.name {
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    color: #aaa;
+}
+
+.description {
+    font-size: 1.9rem;
+    padding: 1rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    word-wrap: break-word;
 }

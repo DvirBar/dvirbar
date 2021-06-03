@@ -24,45 +24,15 @@ html {
     width: 100%;
 }
 
-@media (max-width: 750px) {
-    html {
-        font-size: 9.5px;
-    }
-}
-
-@media (max-width: 700px) {
+@media (min-width: 766px) and (max-width: 1199px) {
     html {
         font-size: 9px;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 765px) {
     html {
         font-size: 8px;
-    }
-}
-
-@media (max-width: 600px) {
-    html {
-        font-size: 7.5px;
-    }
-}
-
-@media (max-width: 550px) {
-    html {
-        font-size: 7px;
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        font-size: 6.5px;
-    }
-}
-
-@media (max-width: 450px) {
-    html {
-        font-size: 6px;
     }
 }
 
@@ -97,20 +67,13 @@ body {
 }
 
 h1 {
-    font-size: 10rem;
+    font-size: 3.5rem;
     font-weight: 100;
-    text-shadow: var(--shadow-default-hover);
-}
-
-@media (max-width: 650px) {
-    h1 {
-        font-size: 9rem;
-    }
 }
 
 h2 {
     font-weight: 100;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 h3 {

@@ -10,11 +10,16 @@ function TechItem({ technology }: IProps): JSX.Element {
   return (
     <div className={styles.item}>
       <img
-        className={styles.item_icon}
+        className={styles.icon}
         src={technology.image}
         alt={technology.name}
       />
-      <div className={styles.item_text}>{technology.name}</div>
+      {technology.description && (
+        <div
+          className={styles.description}
+          dangerouslySetInnerHTML={{ __html: technology.description }}
+        />
+      )}
     </div>
   );
 }

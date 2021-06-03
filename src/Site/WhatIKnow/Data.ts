@@ -1,76 +1,66 @@
 import { Category } from "./types";
 import htmlcss from "../../assests/htmlcss.png";
-import jScript from "../../assests/js.png";
 import mongo from "../../assests/mongodb.png";
 import nodejs from "../../assests/nodejs.png";
-import python from "../../assests/python.png";
 import react from "../../assests/react.png";
 import redux from "../../assests/redux.png";
 import scss from "../../assests/scss.png";
-import typescript from "../../assests/typescript.svg";
 import express from "../../assests/express.png";
+import { IconProps } from "../../Components/Icons/icons";
+import ColorPalette from "../../Components/Icons/ColorPalette";
+import Database from "../../Components/Icons/Database";
 
 const categories: Category[] = [
   {
-    name: "Languages and Supersets",
-    technologies: [
-      {
-        name: "Javascript",
-        image: jScript,
-      },
-      {
-        name: "Typescript",
-        image: typescript,
-      },
-      {
-        name: "Python",
-        image: python,
-      },
-    ],
-  },
-  {
     name: "Frontend",
+    icon: (props: IconProps) => ColorPalette(props),
     technologies: [
       {
         name: "HTML & CSS",
         description:
-          "Deep familiarity with HTML and CSS syntax, including fully responsive design without frameworks. I am able to see or get a description of a design and replicate it in HTML and CSS.",
+          "Deep familiarity with <b>HTML and CSS</b> syntax, including fully responsive design without frameworks.",
         image: htmlcss,
       },
       {
         name: "SCSS",
-        description: "Working exprience using basic features of SCSS.",
+        description: "Working exprience using basic features of <b>SCSS</b>.",
         image: scss,
       },
       {
         name: "React",
         description:
-          "Deep understanding of React concepts and working experience using it to build large applications.",
+          "Deep understanding of <b>React</b> concepts and working experience using it to build large applications.",
         image: react,
       },
       {
         name: "Redux",
         description:
-          "Using Redux to manage complex applcation state. Including using custom memoized selectors, and managing UI state to give live user feedback about asynchronous operations.",
+          "Using <b>Redux</b> to manage complex applcation state. Including using custom memoized selectors, and managing UI state to give live user feedback about asynchronous operations.",
         image: redux,
       },
     ],
   },
   {
     name: "Backend",
+    icon: (props: IconProps) => Database(props),
     technologies: [
       {
         name: "NodeJS",
+        description:
+          "Able to use <b>Node</b> to build Javascript based server with the environment's best practices",
         image: nodejs,
       },
       {
         name: "Express",
+        description: `Using <b>Express</b> to build scallable and maintainable API services
+          with clear multi-layered interface based architecture.`,
         image: express,
       },
       {
         name: "MongoDB & Mongoose",
-        description:
-          "Planning and implementing NoSQL databases with MongoDB. Using the power of Mongoose, such as middlewares, plugins, data validation, virtuals and static methods, to create a more reliable and easy to use data layer interface for the application.",
+        description: `Planning and implementing NoSQL databases with <b>MongoDB</b>. Using the power 
+          of <b>Mongoose</b>, to create a more reliable and easy to use data layer interface for
+          the application.`,
         image: mongo,
       },
     ],

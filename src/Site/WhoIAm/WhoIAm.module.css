@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0 !important;
+    min-height: 50rem;
 }
 
 .titles {
@@ -12,9 +14,21 @@
 }
 
 .title {
+    font-size: 10rem;
     margin-bottom: 4rem;
 }
 
+@media (max-width: 450px) {
+    .title {
+        font-size: 9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 7rem;
+    }
+}
 .sub_title {
     font-size: 3rem;
 }

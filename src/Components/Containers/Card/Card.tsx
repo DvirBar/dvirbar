@@ -6,11 +6,23 @@ interface IProps {
   className?: string;
   width?: number;
   height?: number;
+  horizontal?: boolean;
 }
 
-function Card({ children, className, width, height }: IProps): JSX.Element {
+function Card({
+  children,
+  className,
+  width,
+  height,
+  horizontal,
+}: IProps): JSX.Element {
   return (
-    <div className={`${styles.card} ${className}`} style={{ width, height }}>
+    <div
+      className={`${styles.card} ${className} ${
+        horizontal ? styles.horizontal : ""
+      }`}
+      style={{ width, height }}
+    >
       {children}
     </div>
   );

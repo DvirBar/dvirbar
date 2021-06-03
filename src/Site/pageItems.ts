@@ -2,19 +2,19 @@ import { NavItem } from "../Components/Navigation/Navbar/types";
 
 export const navItems: NavItem[] = [
   {
-    label: "HOME",
+    label: "Home",
     elementId: "who-i-am",
   },
   {
-    label: "TECHNOLOGIES",
+    label: "Stack",
     elementId: "what-i-know",
   },
   {
-    label: "PROJECTS",
+    label: "Projects",
     elementId: "my-projects",
   },
   {
-    label: "ABOUT",
+    label: "About",
     elementId: "why-hire-me",
   },
 ];

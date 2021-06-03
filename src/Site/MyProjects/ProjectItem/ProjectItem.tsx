@@ -19,7 +19,7 @@ function ProjectItem({ project }: IProps): JSX.Element {
       <div style={projectStyle} className={styles.project}>
         <div className={styles.project_details}>
           <div className={styles.titles}>
-            <h2>{project.name}</h2>
+            <h1>{project.name}</h1>
             <h3>{project.description}</h3>
           </div>
           <div className={styles.links}>
