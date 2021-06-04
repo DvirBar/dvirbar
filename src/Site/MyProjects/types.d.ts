@@ -4,4 +4,5 @@ export interface Project {
   image: string;
   gitHub: string;
   link: string;
+  theme?: string;
 }

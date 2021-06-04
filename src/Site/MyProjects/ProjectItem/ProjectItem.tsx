@@ -14,10 +14,14 @@ function ProjectItem({ project }: IProps): JSX.Element {
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
   };
+
   return (
     <div className={styles.wrapper}>
       <div style={projectStyle} className={styles.project}>
-        <div className={styles.project_details}>
+        <div
+          style={{ backgroundColor: project.theme }}
+          className={styles.project_details}
+        >
           <div className={styles.titles}>
             <h1>{project.name}</h1>
             <h3>{project.description}</h3>

@@ -1,8 +1,42 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--main-color);
+    z-index: -1;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 .container {
-    padding-right: 5rem;
-    padding-left: 5rem;
     width: 100%;
     max-width: 120rem;
+}
+
+.title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.list_wrapper {
+    padding-right: 5rem;
+    padding-left: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;

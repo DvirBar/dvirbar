@@ -9,6 +9,7 @@ const projects: Project[] = [
     image: refuah,
     gitHub: "https://github.com/DvirBar/premed",
     link: "https://refuah.org.il/",
+    theme: "#486974",
   },
   {
     name: "Sim Editor",
@@ -16,6 +17,7 @@ const projects: Project[] = [
     image: simEditor,
     gitHub: "https://github.com/DvirBar/sim_editor",
     link: "https://sim-editor.herokuapp.com/",
+    theme: "#4A90E2",
   },
   {
     name: "Sim Editor",
