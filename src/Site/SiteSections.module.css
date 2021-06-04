@@ -6,7 +6,7 @@
 
 .sections > * > * {
     height: 100%;
-    margin-top: 10rem;
+    padding-top: 10rem;
 }
 
 .section_wrapper {
