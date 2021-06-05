@@ -8,12 +8,14 @@ interface IProps {
   navItem: NavItem;
   selectedItem: SelectedItem;
   selectDims: (dims: SelectedDims) => void;
+  toggleLinks: (display: boolean) => void;
 }
 
 function NavbarItem({
   navItem,
   selectedItem,
   selectDims,
+  toggleLinks,
 }: IProps): JSX.Element {
   const isSelectedItem = selectedItem.elementId === navItem.elementId;
   const scrollToItem = (elementId: string) => {
@@ -34,13 +36,18 @@ function NavbarItem({
     }
   }, [width, ref, isSelectedItem]);
 
+  const handleClick = () => {
+    toggleLinks(false);
+    scrollToItem(navItem.elementId);
+  };
+
   return (
     <li
       ref={(newRef) => setRef(newRef)}
       className={`${styles.navbar_item} ${
         isSelectedItem ? styles.item_selected : ""
       }`}
-      onClick={() => scrollToItem(navItem.elementId)}
+      onClick={() => handleClick()}
     >
       <div className={styles.item_text}>{navItem.label}</div>
     </li>

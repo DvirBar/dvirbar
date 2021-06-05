@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Code from "../../../Components/Icons/Code";
 import Globe from "../../../Components/Icons/Globe";
 import { Project } from "../types";
@@ -52,4 +52,4 @@ function ProjectItem({ project }: IProps): JSX.Element {
   );
 }
 
-export default ProjectItem;
+export default React.memo(ProjectItem);
