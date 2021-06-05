@@ -10,6 +10,7 @@ interface IProps {
 function Boxes({ color, className, height, width }: IProps): JSX.Element {
   const style = {
     fill: color || "#000",
+    transition: "all 0.3 ease-in-out",
   };
 
   const styleCls2 = {

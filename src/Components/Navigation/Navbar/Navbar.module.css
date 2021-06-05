@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    justify-content: center;
+    justify-content: space-between;
     height: 7rem;
     --selected-color: var(--main-color);
     background-color: #fff;
@@ -85,4 +85,12 @@
     .item_text {
         font-size: 1.8rem;
     }
+}
+
+.side_wrapper {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }

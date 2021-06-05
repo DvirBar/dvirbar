@@ -3,12 +3,13 @@ import styles from "./Button.module.css";
 
 interface IProps {
   text: string;
+  className?: string;
   onClick: () => void;
 }
 
-function Button({ text, onClick }: IProps): JSX.Element {
+function Button({ text, className, onClick }: IProps): JSX.Element {
   return (
-    <button className={styles.btn} onClick={onClick}>
+    <button className={`${styles.btn} ${className}`} onClick={onClick}>
       {text}
     </button>
   );

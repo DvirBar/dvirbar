@@ -1,5 +1,5 @@
 .btn {
-    background-color: #292929;
+    background-color: var(--main-color);
     color: #fff;
     height: 5rem;
     width: 12rem;
@@ -8,10 +8,10 @@
     border-radius: 0.5rem;
     border: none;
     box-shadow: var(--default-shadow);
-    transition: background-color 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out background-color 0.2s ease-in-out;
     font-family: Roboto;
 }
 
 .btn:hover {
-    background-color: #292929b7;
+    opacity: 0.8;
 }
