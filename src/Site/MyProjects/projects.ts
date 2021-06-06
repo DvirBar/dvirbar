@@ -21,8 +21,8 @@ const projects: Project[] = [
     theme: "#4A90E2",
   },
   {
-    name: "Sim Editor",
-    description: "Psychometry test simulation files generator",
+    name: "Portfolio",
+    description: "This website - my projects portfolio",
     image: dvirBar,
     gitHub: "https://github.com/DvirBar/dvirbar",
     link: "https://dvirbar.com/",
