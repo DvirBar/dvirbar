@@ -24,8 +24,8 @@ const projects: Project[] = [
     name: "Sim Editor",
     description: "Psychometry test simulation files generator",
     image: dvirBar,
-    gitHub: "https://github.com/DvirBar/sim_editor",
-    link: "https://sim-editor.herokuapp.com/",
+    gitHub: "https://github.com/DvirBar/dvirbar",
+    link: "https://dvirbar.com/",
     theme: "#2ab8d1",
   },
 ];

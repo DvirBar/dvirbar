@@ -49,3 +49,22 @@
 .image {
     margin-bottom: 3rem;
 }
+
+.social {
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.social_image {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+}
+
+.social_image:hover {
+    opacity: 0.7;
+}
