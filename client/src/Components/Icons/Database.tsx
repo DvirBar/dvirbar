@@ -1,13 +1,7 @@
 import React from "react";
+import { IconProps } from "./icons";
 
-interface IProps {
-  color?: string;
-  className?: string;
-  height: number;
-  width: number;
-}
-
-function Database({ color, className, height, width }: IProps): JSX.Element {
+function Database({ color, className, height, width }: IconProps): JSX.Element {
   const style = {
     fill: color || "#000",
   };

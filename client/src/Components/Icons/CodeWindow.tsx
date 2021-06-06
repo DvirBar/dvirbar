@@ -1,4 +1,5 @@
 import React from "react";
+import { IconProps } from "./icons";
 
 interface IProps {
   color?: string;
@@ -7,7 +8,12 @@ interface IProps {
   width: number;
 }
 
-function CodeWindow({ color, className, height, width }: IProps): JSX.Element {
+function CodeWindow({
+  color,
+  className,
+  height,
+  width,
+}: IconProps): JSX.Element {
   const style = {
     fill: "none",
     stroke: color || "#000",

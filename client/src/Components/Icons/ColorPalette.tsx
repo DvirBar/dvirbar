@@ -1,18 +1,12 @@
 import React from "react";
-
-interface IProps {
-  color?: string;
-  className?: string;
-  height: number;
-  width: number;
-}
+import { IconProps } from "./icons";
 
 function ColorPalette({
   color,
   className,
   height,
   width,
-}: IProps): JSX.Element {
+}: IconProps): JSX.Element {
   const style = {
     fill: color || "#000",
     stroke: color || "#000",

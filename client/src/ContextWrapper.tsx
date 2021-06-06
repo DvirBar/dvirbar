@@ -1,8 +1,6 @@
 import React, { Fragment, useContext, useState } from "react";
 import "./App.css";
-import ThemeProvider, {
-  ThemeContext,
-} from "./Components/Navigation/Navbar/ColorPicker/ThemeContext";
+import { ThemeContext } from "./Components/Navigation/Navbar/ColorPicker/ThemeContext";
 import Navbar from "./Components/Navigation/Navbar/Navbar";
 import SiteProvider from "./Site/context/SiteContext";
 import { navItems } from "./Site/pageItems";

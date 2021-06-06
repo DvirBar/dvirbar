@@ -6,6 +6,7 @@
     height: 50%;
     background-color: var(--main-color);
     z-index: -1;
+    margin-top: 7rem;
 }
 
 .wrapper {
