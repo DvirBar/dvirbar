@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Code from "../../../Components/Icons/Code";
 import Globe from "../../../Components/Icons/Globe";
 import { Project } from "../types";

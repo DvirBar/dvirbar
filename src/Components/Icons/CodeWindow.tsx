@@ -1,13 +1,6 @@
 import React from "react";
 import { IconProps } from "./icons";
 
-interface IProps {
-  color?: string;
-  className?: string;
-  height: number;
-  width: number;
-}
-
 function CodeWindow({
   color,
   className,

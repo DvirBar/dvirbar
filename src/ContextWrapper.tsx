@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import "./App.css";
 import { ThemeContext } from "./Components/Navigation/Navbar/ColorPicker/ThemeContext";
 import Navbar from "./Components/Navigation/Navbar/Navbar";
@@ -7,7 +7,7 @@ import { navItems } from "./Site/pageItems";
 import SiteSections from "./Site/SiteSections";
 import { SelectedItem } from "./Site/types";
 
-function ContextWrapper() {
+function ContextWrapper(): JSX.Element {
   const [selectedItem, setSelectedItem] = useState<SelectedItem>({
     elementId: navItems[0]?.elementId,
     index: 0,

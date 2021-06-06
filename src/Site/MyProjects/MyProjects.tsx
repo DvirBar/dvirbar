@@ -1,6 +1,4 @@
 import React from "react";
-import Carousel from "../../Components/Navigation/Carousel/Carousel";
-import useWindowDim from "../../hooks/useWindowDim";
 import styles from "./MyProjects.module.css";
 import ProjectItem from "./ProjectItem/ProjectItem";
 import projects from "./projects";

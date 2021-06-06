@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../../Components/Navigation/Navbar/ColorPicker/ThemeContext";
-import useWindowDim from "../../../hooks/useWindowDim";
 import { Reason } from "../types";
 import styles from "./ReasonItem.module.css";
 
@@ -10,8 +9,6 @@ interface IProps {
 
 function ReasonItem({ reason }: IProps): JSX.Element {
   const { selectedColor } = useContext(ThemeContext);
-
-  const { width } = useWindowDim();
 
   return (
     <div className={styles.container}>

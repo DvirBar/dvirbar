@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../Components/Navigation/Navbar/ColorPicker/ThemeContext";
 import useWindowDim from "../../hooks/useWindowDim";
-import AnimationBlock from "./Animation/AnimationBlock";
-import Loadbar from "./Animation/Loadbar";
 import Boxes from "./Boxes";
-import LearnMore from "./LearnMore/LearnMore";
 import styles from "./WhoIAm.module.css";
 
 function WhoIAm(): JSX.Element {
