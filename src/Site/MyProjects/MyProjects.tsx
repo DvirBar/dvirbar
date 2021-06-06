@@ -23,4 +23,4 @@ function MyProjects(): JSX.Element {
   );
 }
 
-export default MyProjects;
+export default React.memo(MyProjects);

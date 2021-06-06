@@ -51,4 +51,4 @@ function ColorPicker({ className }: IProps): JSX.Element {
   );
 }
 
-export default ColorPicker;
+export default React.memo(ColorPicker);

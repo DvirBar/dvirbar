@@ -5,6 +5,8 @@ import Languages from "./Languages/Languages";
 import styles from "./WhatIKnow.module.css";
 
 function WhatIKnow(): JSX.Element {
+  console.log("whatiknow");
+
   return (
     <div className={styles.container} id="what-i-know">
       <Languages />
@@ -17,4 +19,4 @@ function WhatIKnow(): JSX.Element {
   );
 }
 
-export default WhatIKnow;
+export default React.memo(WhatIKnow);

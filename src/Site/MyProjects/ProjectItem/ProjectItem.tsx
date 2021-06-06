@@ -52,4 +52,4 @@ function ProjectItem({ project }: IProps): JSX.Element {
   );
 }
 
-export default React.memo(ProjectItem);
+export default ProjectItem;

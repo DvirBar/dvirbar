@@ -35,4 +35,4 @@ function WhoIAm(): JSX.Element {
   );
 }
 
-export default WhoIAm;
+export default React.memo(WhoIAm);

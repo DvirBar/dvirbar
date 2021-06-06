@@ -15,4 +15,4 @@ function WhyHireMe(): JSX.Element {
   );
 }
 
-export default WhyHireMe;
+export default React.memo(WhyHireMe);

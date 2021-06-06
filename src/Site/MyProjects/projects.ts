@@ -1,6 +1,7 @@
 import { Project } from "./types";
 import refuah from "../../assests/teasers/refuah.png";
 import simEditor from "../../assests/teasers/sim-editor.png";
+import dvirBar from "../../assests/teasers/dvirbar.png";
 
 const projects: Project[] = [
   {
@@ -22,9 +23,10 @@ const projects: Project[] = [
   {
     name: "Sim Editor",
     description: "Psychometry test simulation files generator",
-    image: simEditor,
+    image: dvirBar,
     gitHub: "https://github.com/DvirBar/sim_editor",
     link: "https://sim-editor.herokuapp.com/",
+    theme: "#2ab8d1",
   },
 ];
 

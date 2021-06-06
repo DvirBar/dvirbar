@@ -32,6 +32,11 @@ function Navbar({ navItems, selectedItem }: IProps): JSX.Element {
 
   const { selectedColor } = useContext(ThemeContext);
 
+  const handleClick = () => {
+    window.location.href =
+      "https://drive.google.com/uc?id=10FKbZIrhzAuLT4EtYBpzQepoJatCbRAF&export=download";
+  };
+
   return (
     <nav
       className={`${styles.navbar} ${
@@ -69,7 +74,7 @@ function Navbar({ navItems, selectedItem }: IProps): JSX.Element {
         <div style={indicatorStyle} className={styles.indicator} />
       </div>
       <div className={styles.side_wrapper}>
-        <Button text="Resume" onClick={() => console.log("Clicked")} />
+        <Button text="Resume" onClick={handleClick} />
       </div>
     </nav>
   );
