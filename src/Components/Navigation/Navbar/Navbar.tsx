@@ -34,7 +34,7 @@ function Navbar({ navItems, selectedItem }: IProps): JSX.Element {
 
   const handleClick = () => {
     window.location.href =
-      "https://drive.google.com/uc?id=1rDdpOay3wCVl3-vJUyaeGZzsR7w_ZeaS&export=download";
+      "https://drive.google.com/uc?id=11G3wMjtZX4p-QqeqKAyZphbm0VJjcx56&export=download";
   };
 
   return (
