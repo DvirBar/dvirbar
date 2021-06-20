@@ -4,7 +4,7 @@ import styles from "./Button.module.css";
 interface IProps {
   text: string;
   className?: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 function Button({ text, className, onClick }: IProps): JSX.Element {

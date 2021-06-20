@@ -32,11 +32,6 @@ function Navbar({ navItems, selectedItem }: IProps): JSX.Element {
 
   const { selectedColor } = useContext(ThemeContext);
 
-  const handleClick = () => {
-    window.location.href =
-      "https://drive.google.com/uc?id=11G3wMjtZX4p-QqeqKAyZphbm0VJjcx56&export=download";
-  };
-
   return (
     <nav
       className={`${styles.navbar} ${
@@ -74,7 +69,13 @@ function Navbar({ navItems, selectedItem }: IProps): JSX.Element {
         <div style={indicatorStyle} className={styles.indicator} />
       </div>
       <div className={styles.side_wrapper}>
-        <Button text="Resume" onClick={handleClick} />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.docdroid.net/bvLPbGH/cv-dvir-bartov-pdf"
+        >
+          <Button text="Resume" />
+        </a>
       </div>
     </nav>
   );
