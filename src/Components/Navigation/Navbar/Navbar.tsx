@@ -72,7 +72,7 @@ function Navbar({ navItems, selectedItem }: IProps): JSX.Element {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://drive.google.com/file/d/11G3wMjtZX4p-QqeqKAyZphbm0VJjcx56/view?usp=sharing"
+          href="https://firebasestorage.googleapis.com/v0/b/dvirbar-afed9.appspot.com/o/CV%20-%20Dvir%20Bartov.pdf?alt=media&token=10cdb118-ce85-4e03-8725-18d076352b79"
         >
           <Button text="Resume" />
         </a>
